@@ -80,6 +80,17 @@ def create_table(cursor):
     """
 
     # Write CREATE TABLE code here
+Create TABLE sales_records (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date TEXT,
+    product TEXT,
+    category TEXT,
+    quantity INTEGER,
+    unit_price REAL,
+    total_sales REAL,
+    payment_method TEXT
+);
+    
     pass
 
 
@@ -99,6 +110,7 @@ def insert_records(cursor, records):
     """
 
     # Write INSERT INTO code here
+    Insert into sales_records (date, product, category, quantity, unit_price, total_sales, payment_method);
     pass
 
 
@@ -114,6 +126,8 @@ def select_records(cursor):
     """
 
     # Write SELECT code here
+SELECT * from sales_records where id, date, product, category, quantity, unit_price, total_sales, payment_method FROM sales_records;
+
     pass
 
 
